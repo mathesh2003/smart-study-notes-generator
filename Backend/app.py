@@ -13,6 +13,9 @@ print(" Starting API...")
 print("======================================")
 
 HF_TOKEN = os.environ.get("HF_TOKEN")
+print("HF_TOKEN exists:", bool(HF_TOKEN))
+print("HF_TOKEN starts with hf_:", bool(HF_TOKEN and HF_TOKEN.startswith("hf_")))
+print("HF_TOKEN length:", len(HF_TOKEN) if HF_TOKEN else 0)
 
 if not HF_TOKEN:
     print("WARNING: HF_TOKEN is not configured!")
