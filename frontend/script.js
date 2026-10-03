@@ -148,9 +148,7 @@ generateBtn.addEventListener(
                SEND DATA TO PYTHON FLASK BACKEND
             ===================================== */
 
-            const response = await fetch(
-                "http://127.0.0.1:5000/api/generate",
-                {
+            const response = await fetch("https://smart-study-notes-api.onrender.com/api/generate", {
                     method: "POST",
 
                     headers: {
