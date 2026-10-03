@@ -21,7 +21,7 @@ else:
 
 client = InferenceClient(
     api_key=HF_TOKEN,
-    provider="auto"
+    provider="hf-inference"
 )
 
 MODEL = "facebook/bart-large-cnn"
